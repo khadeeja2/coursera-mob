@@ -1,27 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-	<head>
-		<title>Js</title>
-	</head>
-		<body>
-			<h2>factorial</h2>
-			<button onclick="factorial()">Click Me</button>
-			<script> 
-			  	function factorial() {
-			     	var n;
-			     	n = prompt("Enter a number");
-			     	if (n == null || n == "" ){
-			     		alert("Enter a number");
-			     	}
-			     	else{
-			     		var answer = n;
-			     		for(var i=1;i<n;i++)
-			     		{
-			     			answer = answer * i
-			     		}
-			    	}
-			     alert("the factorial of " + n + " is " + answer);
-			    }
-			</script>
-		</body>
+<head>
+<title>JavaScript</title>
+</head>
+<body>
+<h1>calculator</h1>
+<button onclick="addition()">addition</button>
+<button onclick="substraction()">substraction</button>
+<button onclick="multiplication()">multiplication</button>
+<button onclick="division()">Division</button>
+<script>
+function addition(){
+  var a=0,b=0,r=0;
+  a=parseInt(prompt("input a   number"));
+b=parseInt(prompt("input another number"));
+alert("the numbers  "+a+"  and "+b);
+ r=a+b;
+ alert("The sum of two numbers "+a+" and "+b+" is "+r);
+} 
+function substraction(){
+var a=0,b=0,r=0;
+a=parseInt(prompt("input a number"));
+b=parseInt(prompt("input another number"));
+alert("the numbers  "+a+"  and "+b);
+ r=a-b;
+ alert("The difference of two numbers "+a+" and "+b+" is "+r);
+}  
+ function multiplication(){
+var a=0,b=0,r=0;
+a=parseInt(prompt("input a number"));
+b=parseInt(prompt("input another number"));
+alert("the numbers  "+a+"  and "+b);
+ r=a*b;
+ alert("The product of two numbers "+a+" and "+b+" is "+r);
+}
+ function division(){
+var a=0,b=0,r=0;
+a=parseInt(prompt("input a number"));
+b=parseInt(prompt("input another number"));
+alert("the numbers  "+a+"  and "+b);
+ r=a/b;
+ alert("The result of division of two numbers "+a+" and "+b+" is "+r);
+} 
+</script>
+</body
 </html>
