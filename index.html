@@ -1,5 +1,27 @@
+<!DOCTYPE html>
 <html>
-<body>
-<h1>hello friends</h1>
-</body>
+	<head>
+		<title>Js</title>
+	</head>
+		<body>
+			<h2>factorial</h2>
+			<button onclick="factorial()">Click Me</button>
+			<script> 
+			  	function factorial() {
+			     	var n;
+			     	n = prompt("Enter a number");
+			     	if (n == null || n == "" ){
+			     		alert("Enter a number");
+			     	}
+			     	else{
+			     		var answer = n;
+			     		for(var i=1;i<n;i++)
+			     		{
+			     			answer = answer * i
+			     		}
+			    	}
+			     alert("the factorial of " + n + " is " + answer);
+			    }
+			</script>
+		</body>
 </html>
